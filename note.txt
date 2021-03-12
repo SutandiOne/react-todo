@@ -1,0 +1,41 @@
+first this project use firebase, so need to create firebase project in console firebase.
+
+https://console.firebase.google.com/ -> create_project -> set name_project -> check google analyst -> finish
+
+now setup firebase, make for web app and done. 
+
+if dont have firebase cli in global, need install it.
+$ npm install -g firebase-tools
+
+next step login in firebase cli
+$ firebase login 
+
+now get config key firebase : https://console.firebase.google.com/u/1/project/react-todo-simple/settings/general
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBwvUusJeaxAGf7-Vt5AGwLcg8aN3SFJbQ",
+  authDomain: "react-todo-simple.firebaseapp.com",
+  databaseURL: "https://react-todo-simple.firebaseio.com",
+  projectId: "react-todo-simple",
+  storageBucket: "react-todo-simple.appspot.com",
+  messagingSenderId: "477787020527",
+  appId: "1:477787020527:web:34a8c3f01c896f07f20f1a",
+  measurementId: "G-MK664E7CYT"
+};
+
+now install firebase in project
+$ npm install firebase
+
+to deploy firebase
+$ firebase init
+check hosting, enter -> choose existing project -> "build" -> y
+then $ npm run build, now push to firebase hosting
+$ firebase deploy
+
+install material ui (https://material-ui.com)
+$ npm install @material-ui/core
+
+$ npm install @material-ui/icons
+
+
+// https://medium.com/@april9288/how-i-got-a-100-lighthouse-score-with-my-react-app-2b676ef62113
